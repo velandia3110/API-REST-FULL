@@ -1,6 +1,6 @@
 import express from 'express';
 import morgan from 'morgan';
-import pkg from '../package.json';
+import pkg from '../package.json' assert{type:'json'};
 
 import {createRoles} from './libs/initialSetup.js';
 
