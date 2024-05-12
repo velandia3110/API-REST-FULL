@@ -2,7 +2,6 @@
   "name": "v2.0",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "node src/index.js --exec babel-node",
     "build": "babel src --out-dir build",
