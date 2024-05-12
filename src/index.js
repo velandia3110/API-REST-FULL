@@ -1,5 +1,5 @@
 import app from './app.js';
 import './database.js';
-
-app.listen(10000);
-console.log('Server listen on port ' + 10000);
+const port = process.env.PORT || 4000;
+app.listen(port);
+console.log('Server listen on port ' + port);
