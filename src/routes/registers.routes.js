@@ -2,7 +2,7 @@ import { Router } from "express";
 const router = Router();
 
 import * as registerController from '../controllers/registers.controller.js';
-import {authjwt} from '../middlewares';
+import {authjwt} from '../middlewares/index.js';
 
 router.get('/', registerController.getRegisters);
 router.get('/:id', registerController.getRegisterById);
