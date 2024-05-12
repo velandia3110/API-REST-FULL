@@ -1,7 +1,7 @@
-import User from '../models/User';
+import User from '../models/User.js';
 import jwt from 'jsonwebtoken';
-import config from '../config';
-import Role from '../models/Role';
+import config from '../config.js';
+import Role from '../models/Role.js';
 
 
  //Para registrar nuevos empleados

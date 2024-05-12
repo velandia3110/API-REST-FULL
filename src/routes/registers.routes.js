@@ -1,7 +1,7 @@
 import { Router } from "express";
 const router = Router();
 
-import * as registerController from '../controllers/registers.controller';
+import * as registerController from '../controllers/registers.controller.js';
 import {authjwt} from '../middlewares';
 
 router.get('/', registerController.getRegisters);

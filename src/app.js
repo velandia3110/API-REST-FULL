@@ -2,11 +2,11 @@ import express from 'express';
 import morgan from 'morgan';
 import pkg from '../package.json';
 
-import {createRoles} from './libs/initialSetup';
+import {createRoles} from './libs/initialSetup.js';
 
-import registerRoutes from './routes/registers.routes';
-import authRoutes from './routes/auth.routes';
-import userRoutes from './routes/user.routes';
+import registerRoutes from './routes/registers.routes.js';
+import authRoutes from './routes/auth.routes.js';
+import userRoutes from './routes/user.routes.js';
 
 const app = express();
 createRoles();

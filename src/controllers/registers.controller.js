@@ -1,4 +1,4 @@
-import Register from '../models/Register';
+import Register from '../models/Register.js';
 
 export const createRegister = async(req,res)=>{
     const {description, category} = req.body;
