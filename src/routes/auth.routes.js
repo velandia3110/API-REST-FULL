@@ -8,6 +8,6 @@ import {authjwt,verifySignup} from '../middlewares/index.js';
 const jsonParser = bodyParser.json();
 
 router.post('/signin/',jsonParser,authController.signin);
-router.post('/signup/',jsonParser,[authjwt.verifyToken,authjwt.isAdmin,verifySignup.checkRolesExisted,verifySignup.checkDuplicatedUsernameOrEmail],authController.signup);
+router.post('/signup/',jsonParser,authController.signup);
 
 export default router;
