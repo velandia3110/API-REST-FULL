@@ -13,7 +13,7 @@ createRoles();
 
 app.set('pkg',pkg);
 
-const allowedOrigins = ['https://luksofqa.netlify.app/', 'https://api-rest-full-ork3.onrender.com'];
+const allowedOrigins = ['https://luksofqa.netlify.app/','https://luksofqa.netlify.app/pages/form.register.html', 'https://api-rest-full-ork3.onrender.com'];
 
 app.use((req, res, next) => {
     const origin = req.headers.origin;
