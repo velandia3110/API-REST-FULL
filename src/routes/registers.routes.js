@@ -10,9 +10,9 @@ const jsonParser = bodyParser.json();
 router.get('/',jsonParser, registerController.getRegisters);
 router.get('/:id',jsonParser, registerController.getRegisterById);
 
-router.post('/',jsonParser,authjwt.verifyToken, registerController.createRegister);
-router.put('/:id',jsonParser,authjwt.verifyToken, registerController.updateRegisterById);
-router.delete('/:id',jsonParser,authjwt.verifyToken, registerController.deleteRegisterById);
+router.post('/',jsonParser, registerController.createRegister);
+router.put('/:id',jsonParser, registerController.updateRegisterById);
+router.delete('/:id',jsonParser, registerController.deleteRegisterById);
 
 
 
