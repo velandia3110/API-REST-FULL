@@ -15,6 +15,7 @@ app.set('pkg',pkg);
 
 const allowedOrigins = ['https://luksofqa.netlify.app/','https://luksofqa.netlify.app/pages/form.register.html', 'https://api-rest-full-ork3.onrender.com'];
 
+/*
 app.use((req, res, next) => {
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
@@ -25,6 +26,13 @@ app.use((req, res, next) => {
     res.header('Access-Control-Allow-Credentials', true);
     next();
   });
+  */
+
+app.all('*',function (req,res,next){
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+})
 
 app.use(morgan('dev'));
 app.use(express.json());
